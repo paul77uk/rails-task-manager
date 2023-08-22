@@ -1,0 +1,8 @@
+<%= form_with model: task do |f| %>
+  <div ><%= f.label :title %></div>
+  <div><%= f.text_field :title %></div>
+  <div><%= f.label :details %></div>
+  <div><%= f.text_field :details %></div>
+  <div><%= f.check_box :completed %> <%= f.label :completed %></div>
+  <%= f.submit class: 'btn btn-primary' %>
+<% end %>
